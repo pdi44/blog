@@ -1,0 +1,36 @@
+.navbar {
+  background: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(30px);
+  .navbar-sidebar__backdrop {
+    height: 100vh;
+  }
+  .navbar-sidebar {
+    height: 100vh;
+  }
+}
+
+.hero--primary {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-bg {
+    object-fit: cover;
+    object-position: top right;
+    height: 100vh;
+    opacity: .75;
+  }
+
+  .slogan {
+    mix-blend-mode: overlay;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+}
+
+.footer {
+  text-align: center;
+}

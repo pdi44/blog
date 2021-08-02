@@ -3,9 +3,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
+  title: 'Pidan & Misty',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://pdi44.github.io',
   baseUrl: '/blog/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -14,10 +14,10 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Pidan & Misty',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -28,38 +28,34 @@ module.exports = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/pdi44/blog',
           label: 'GitHub',
           position: 'right',
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'wiki',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Social Account',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Misty\'s weibo',
+              href: 'https://weibo.com/u/2300815613',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Pidan\'s weibo',
+              href: 'https://weibo.com/u/7655402872',
             },
           ],
         },
@@ -72,7 +68,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/pdi44/blog',
             },
           ],
         },
@@ -81,9 +77,22 @@ module.exports = {
     },
     prism: {
       theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
+      darkTheme: darkCodeTheme
+    },
+    colorMode: {
+      // "light" | "dark" (亮色 · 暗色)
+      defaultMode: 'light',
+
+      // 隐藏导航栏的开关
+      // 适合您仅想使用一种颜色模式的情况
+      disableSwitch: true,
+
+      // 是否使用 prefers-color-scheme media-query，
+      // 基于用户的系统偏好设置，而非硬编码的 defaultMode
+      respectPrefersColorScheme: false,
     },
   },
+  plugins: ['docusaurus-plugin-sass'],
   presets: [
     [
       '@docusaurus/preset-classic',

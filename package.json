@@ -1,7 +1,8 @@
 {
-  "name": "my-website",
+  "name": "blog",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://pdi44.github.io/blog",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -20,10 +21,13 @@
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
     "clsx": "^1.1.1",
+    "docusaurus-plugin-sass": "^0.2.1",
     "file-loader": "^6.2.0",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-parallax": "^3.3.0",
+    "sass": "^1.36.0",
     "url-loader": "^4.1.1"
   },
   "browserslist": {
