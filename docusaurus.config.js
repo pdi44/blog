@@ -10,8 +10,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'pdi44', // Usually your GitHub org/user name.
+  projectName: 'blog', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Pidan & Misty',
@@ -22,9 +22,9 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'intro',
+          docId: 'index',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Wiki',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -42,7 +42,7 @@ module.exports = {
           items: [
             {
               label: 'wiki',
-              to: '/docs/intro',
+              to: '/docs/index',
             },
           ],
         },
@@ -101,13 +101,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/pdi44/blog/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/pdi44/blog/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
